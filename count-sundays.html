@@ -35,6 +35,41 @@
         <div class="starter-template" ng-controller="CountSundaysCtrl">
             <h1>Count Sundays Apps</h1>
             <p class="lead">A series of applications to test my knowledge of Angular 1.x.</p>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4>Start Month & Year</h4>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <select class="form-control" ng-options="month for month in months" ng-model="start.selectedMonth"></select>
+                                </div>
+                                <div class="col-xs-6">
+                                    <select class="form-control" ng-options="year for year in years" ng-model="start.selectedYear"></select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4>End Month & Year</h4>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <select class="form-control" ng-options="month for month in months" ng-model="end.selectedMonth"></select>
+                                </div>
+                                <div class="col-xs-6">
+                                    <select class="form-control" ng-options="year for year in years" ng-model="end.selectedYear"></select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="padding-top: 50px">
+                    <p class="lead" style="font-size: 7rem">{{getResult()}} Months</p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
