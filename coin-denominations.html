@@ -35,8 +35,9 @@
         <div class="starter-template" ng-controller="CoinDenominationsCtrl">
             <h1>Coin Denominations App</h1>
             <p class="lead">A change maker ...</p>
+            <p class="lead">Coins: 1p, 2p, 5p, 10p, 20p, 50p, 100p, 200p</p>
             <input type="number" max="500" min="0" step="1" value="5" class="form-control" ng-model="amount" />
-            <p class="lead">{{amount}}p can be produced in {{findCombinations(amount, coins)}} ways</p>
+            <p class="lead"><span ng-bind="amount">0</span>p can be produced in <span ng-bind="findCombinations(amount, coins)">1</span> way(s)</p>
         </div>
     </div>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
