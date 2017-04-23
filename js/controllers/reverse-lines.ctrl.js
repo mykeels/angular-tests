@@ -1,4 +1,4 @@
-app.controller("MainCtrl", function ($scope) {
+app.controller("ReverseLinesCtrl", function ($scope) {
     $scope.text = "";
     $scope.getReverseLines = function (text) {
         return text.split('\n').map(function (line) {

@@ -1,1 +1,1 @@
-var app = angular.module("ReverseLineApp", []);
+var app = angular.module("AngularTestsApp", []);
